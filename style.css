@@ -55,9 +55,17 @@ li{
 }
 .nav-bar-sm{
     display: none;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
 }
 .nav-bar{
     display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     justify-content: space-between;
     padding: 20px 70px 20px;
     background-color: transparent;
@@ -79,12 +87,17 @@ li{
 .logo span{
     color: var(--button-bgc);
 }
+.scrolled{
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 #bebab5;
+
+}
 .hero{
     display: flex;
     flex-direction:row;
     gap:50px;
     justify-content: space-between;
-    padding: 0 70px 0;
+    padding: 90px 70px 0;
     width: 100%;
 }
 .hero-img{

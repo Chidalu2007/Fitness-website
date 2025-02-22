@@ -25,9 +25,20 @@
 const harmburger= document.querySelector('.header .menu');
 const mClose= document.querySelector('.close');
 const navLinks = document.querySelector('.nav-bar-sm .nav-links');
-
+const nav = document.querySelectorAll('nav');
 harmburger.addEventListener('click', ()=>{
     console.log('click');
     navLinks.classList.toggle('nav-links')
     
+})
+
+window.addEventListener('scroll', ()=>{
+    for (let i = 0; i < nav.length; i++) {
+        
+        if(window.scrollY > 50){
+            nav[i].classList.add('scrolled');
+        }else{
+            nav[i].classList.remove('scrolled');
+        }
+    }
 })
