@@ -3,72 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front-end Project</title>
+    <title>Fit Your Health</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="container">
-      <nav class="nav-bar">
-        <div class="nav-header">
-          <h1>FitYour<span>Health</span></h1>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./services.html">Services</a></li>
-          </ul>
-          <div class="btn">
-            <a href="./contact.html"><button>Contact Us</button></a>
-          </div>
-        </div>
-      </nav>
+    <nav class="nav-bar">
+      <a href="#"
+        ><p class="logo">FitYour<span>Health</span></p></a
+      >
 
-      <div class="hero">
-        <div class="hero-text">
-          <div class="header">
-            
-              <h1>Transform Your Health</h1> 
-             <h1>With Personalized </h1> 
-              <h1>Coaching</h1>
-            
-          </div>
-          <div class="header-text">
-            <p>
-              Unlock your full potential with customized nutrition plans,
-              dynamic workouts, and a supportive community.Our expert
-              coaches guide you every step of the way so you can build a 
-              healthier, stronger, and more vibrant life.
-            </p>
-          </div>
-          <div class="header-btn">
-            <button>Get Started Today</button>
-          </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+        <a href="#contact"><button>Contact</button></a>
+      </div>
+    </nav>
+
+    <nav class="nav-bar-sm">
+      <div class="header">
+        <p class="logo">FitYour<span>Health</span></p>
+        <img
+          src="./images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+          alt=""
+          class="menu"
+        />
+         <img
+          src="./images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+          alt=""
+          class="close"
+        /> 
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+        <div class="contact">
+          <a href="#contact"><button>Contact</button></a>
         </div>
-        <div class="hero-imgs">
-          <div>
+      </div>
+    </nav>
+
+      <div id="home" class="hero">
+        <div class="hero-text">
+          <h1>Transform Your Health with Personalized Coaching</h1>
+          <p class="header-text">
+            Unlock your full potential with customized nutrition plans, dynamic
+            workouts, and a supportive community.Our expert coaches guide you
+            every step of the way so you can build a healthier, stronger, and
+            more vibrant life.
+          </p>
+          <button>Get Started Today</button>
+        </div>
+        <div class="hero-img">
           <div class="img1">
             <img src="./images/Group 10.png" alt="" />
           </div>
           <div class="img2">
-            <img src="./images/image (1).png" alt="" />
+            <img src="./images/image (2).png" alt="" />
           </div>
-          <div class="img3-text">
-            <div>
-              <img src="./images/Group 77.png" alt="" />
-              <p>Success <br />Result</p>
+          <div class="img3">
+            <img src="./images/Group 77.png" alt="" />
+            <div class="img-text">
+              Success <br />
+              Result
             </div>
           </div>
         </div>
-        </div>
+      </div>
+   <div class="hero2">
+    <div class="hero-img">
+      <div class="img1">
+        <img src="./images/Group 10.png" alt="">
+      </div>
+      <div class="img2">
+        <img src="./images/image (1).png" alt="">
       </div>
     </div>
+    <div class="hero-text">
+      <h2>we offer the best services</h2>
+      <p class="text">
+        Experience exceptional care with our premier fitness and diet coaching services. Our expert team delivers tailored programs, innovative workouts, and nutritional guidance for unmatched, lasting results every day.
+      </p>
+      <div class="bullet-text">
+        <p class="bt">
+          <img src="./images/Vector.png" alt="">
+          Personalized Nutrition Coaching
+        </p>
+        <p class="bt">
+          <img src="./images/Vector.png" alt="">
+          Custom Fitness Programs
+        </p>
+        <p class="bt">
+          <img src="./images/Vector.png" alt="">
+          Holistic Wellness & Accountability
+        </p>
+      </div>
+      <button>Book Now</button>
+    </div>
+   </div>
     <script src="./app.js"></script>
   </body>
 </html>
