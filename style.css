@@ -324,7 +324,6 @@ li{
     gap: 20px;
     flex-direction: row;
     /* width: 200%; */
-
 }
 
 .all-customers .customer{
@@ -339,6 +338,7 @@ li{
     border-radius: 20px;
     padding: 20px;
     cursor:grab;
+
 }
 .c-img{
     display: flex;
@@ -353,19 +353,26 @@ li{
     display: flex;
     flex-direction: column;
     gap: 5px;
+
 }
 .m-name{
     font-size: 13px;
     font-weight: 700;
+    font-family: 'mulish';
+
 }
 .country{
     font-size: 13px;
     font-weight: 200;
+    font-family: 'mulish';
+
 }
 .icon{
     font-size: 48px;
     font-weight: 700;
     color: var(--button-bgc);
+    font-family: 'mulish';
+
 }
 .customer-text{
     font-size: 13px;
@@ -433,7 +440,7 @@ footer{
     justify-content: center;
     padding:70px  ;
     background-color: #000033F2;
-    
+    font-family: 'mulish';
 }
 footer a{
     color: #fff;
@@ -451,6 +458,8 @@ footer a{
 }
 .footer1 .container .text{
     color: #fff;
+    font-family: 'mulish';
+
 }
 .footer1 .container h3{
     font-weight: 700;
@@ -460,8 +469,13 @@ footer a{
 .footer1 .container h3 span{
     color: var(--button-bgc);
 }
+.footer1 .container a{
+    font-family: 'mulish';
+}
 .connect{
     color: #fff;
+    font-family: 'mulish';
+
 }
 .footer2 p{
     color: #fff;
