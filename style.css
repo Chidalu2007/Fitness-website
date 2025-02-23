@@ -47,8 +47,8 @@ button{
     background-color: var(--button-bgc);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 12px;
+    padding: 13.68px 20.51px ;
+    border-radius: 20px;
     font-size: var(--small-text-size);
 }
 li{
