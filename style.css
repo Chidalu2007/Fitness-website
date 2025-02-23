@@ -37,6 +37,7 @@ html{
 body{
     margin: 0 auto;
     max-width: 1300px;
+    min-width: 300px;
 }
 a{
     text-decoration: none;
@@ -372,6 +373,99 @@ li{
     line-height: 26px;
 
 }
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 500px;
+    padding: 50px 70px 50px;
+}
+.news .heading{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.news .heading h3{
+    font-size: 35px;
+    font-weight:700;
+}
+.news .heading .text{
+    font-size: var(--small-text-size);
+    font-weight: 300;
+    line-height: 26px;
+}
+.input-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.input-btn .input{
+    width:50%;
+}
+
+.input-btn .input input{
+    width: 100%;
+    padding: 20px;
+    height: 53px;
+    border-radius: 22.67px;
+    border: none;
+    background: #F2F1F1;
+    color: #6B728066;
+    font-size: 13px;
+    font-weight: 300;
+}
+.input-btn button{
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: var(--small-text-size);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:70px  ;
+    background-color: #000033F2;
+    
+}
+footer a{
+    color: #fff;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer1 .container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-wrap: nowrap;
+}
+.footer1 .container .text{
+    color: #fff;
+}
+.footer1 .container h3{
+    font-weight: 700;
+    font-size: 29.06px;
+    color: #fff;
+}
+.footer1 .container h3 span{
+    color: var(--button-bgc);
+}
+.connect{
+    color: #fff;
+}
+.footer2 p{
+    color: #fff;
+}
 @media(max-width:768px){
     .nav-bar{
         display: none;
@@ -462,5 +556,25 @@ li{
     }
     .all-customers{
         flex-direction: column;
+    }
+    .input-btn {
+    flex-direction: column;
+    gap: 25px;
+    }
+    .input-btn .input {
+        width: 100%;
+    }
+    .input-btn button{
+    width: 50%;
+    }
+    footer{
+        flex-direction:column;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    .footer1{
+        flex-direction: column;
+        gap: 10px;
     }
 }
