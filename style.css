@@ -447,7 +447,7 @@ footer a{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
 }
 .footer1 .container .text{
     color: #fff;
@@ -569,12 +569,16 @@ footer a{
     }
     footer{
         flex-direction:column;
+        gap: 0px;
+        padding: 0;
+        text-wrap: wrap;
     }
     footer .container{
         flex-direction: column;
+        gap:  0px;
     }
     .footer1{
         flex-direction: column;
-        gap: 10px;
+        gap: 0px;
     }
 }
