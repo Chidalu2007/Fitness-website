@@ -1,0 +1,104 @@
+:root{
+    --heading-size:50px;
+    --sub-heading-size:35px;
+    --small-text-size:16px;
+    --button-bgc:#E68A00;
+    --bgc: #FFF9F0;
+    --text-color:#000033;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+    color:  var(--text-color);    
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #FFF9F0;
+}
+::-webkit-scrollbar-button{
+    background-color:#E68A00;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track{
+    background-color: beige;
+    width: 10px;
+    border: 2px solid burlywood;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #E68A00;
+    height: 20px;
+    border-radius: 20px;
+}
+body{
+    margin: 0 auto;
+    max-width: 1300px;
+    min-width: 300px;
+}
+button{
+    background-color: var(--button-bgc);
+    color: #fff;
+    border: none;
+    padding: 13.68px 20.51px ;
+    border-radius: 20px;
+    font-size: var(--small-text-size);
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 70px;
+}
+.hero .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.hero .hero-text h1{
+    font-size: var(--heading-size);
+    font-weight: 700;
+    line-height: 65px;
+}
+.hero .hero-text p{
+    font-weight: 300;
+    font-size: var(--small-text-size);
+    line-height: 27px;
+}
+.hero .hero-img{
+    width: 100%;
+    position: relative;
+}
+.hero .hero-img .img1{
+    width: 50%;
+    height: 40%;
+    position: relative;
+    top: 5px;
+}
+.hero .hero-img .img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero .hero-img .img2 img{
+    width: 100%;
+}
+
+.hero .hero-img .img2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+@media(max-width:768px){
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 70px 50px 50px 50px;
+    }
+    
+}
