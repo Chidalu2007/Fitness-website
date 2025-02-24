@@ -81,6 +81,9 @@ li{
     flex-direction: row;
     gap: 30px;
 }
+.nav-links a button{
+    cursor: pointer;
+}
 .logo{
     font-size: 32px;
     font-weight: 700;
