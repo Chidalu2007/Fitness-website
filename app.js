@@ -28,7 +28,7 @@ const navLinks = document.querySelector('.nav-bar-sm .nav-links');
 const nav = document.querySelectorAll('nav');
 harmburger.addEventListener('click', ()=>{
     console.log('click');
-    navLinks.classList.toggle('nav-links')
+    navLinks.classList.toggle('nav-links');
     
 })
 
