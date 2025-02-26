@@ -1,3 +1,4 @@
+const { log, error } = require('console');
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -18,6 +19,23 @@ app.post('/submit', (req, res) => {
     // Send a response to the user
     res.send(`<h2>Thank you, ${name}! We received your email: ${email}, We received your request: ${request}</h2>`);
 });
+
+app.post('/subscribe', (req,res)=>{
+app.use(express.urlencoded({ extended: true }));
+   
+    const {email} =req.body;
+    console.log(`You just subscribed to FitYourHealth ${email}`);
+     
+    res.sendFile(path.join(__dirname, 'public', '/message.html'), (err)=>{
+        if(err){
+            console.error('check your internet connection', err);
+          return res.sendFile(path.join(__dirname, 'public', '/error.html'));
+            
+        }
+        
+    })
+    
+})
 
 app.get('/', (req, res) => {  
     const filePath = path.join(__dirname,'public', 'index.html');

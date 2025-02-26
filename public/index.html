@@ -150,7 +150,7 @@
           </div>
           <h3>Custom Fitness Programs</h3>
           <p class="text">
-            Whether you’re aiming to lose weight, build strength, or boost
+            Whether you're aiming to lose weight, build strength, or boost
             endurance, our customized workout routines are designed with your
             individual needs in mind. From one-on-one training sessions to
             virtual classes, we offer flexible options that keep you challenged.
@@ -292,18 +292,20 @@
           below to get daliy update about us
         </p>
       </div>
-      <div class="input-btn">
-        <div class="input">
-          <label for="email"></label>
-          <input
-            type="email"
-            id="email"
-            name="Email"
-            placeholder="Enter your email address"
-          />
+      <form action="/subscribe" method="post">
+        <div class="input-btn">
+          <div class="input">
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <button type="submit">subscribe</button>
         </div>
-        <button>subscribe</button>
-      </div>
+      </form>
     </div>
     <footer>
       <div class="footer">
@@ -343,8 +345,7 @@
         © FitYourHealth 2025. All right reserved. Designed by Chidalu
       </p>
     </footer>
- 
+
     <script src="./app.js"></script>
-    <script src="./server.js"></script>
   </body>
 </html>
