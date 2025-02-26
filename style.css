@@ -242,10 +242,6 @@ li{
     line-height: 26px;
 }
 
-/*border: 1.62px solid #E68A00
-    box-shadow: 0px 10px 25px 0px #00003314;
-
-*/
 .box-container{
     display: flex;
     flex-direction: row;
@@ -446,47 +442,51 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--text-color);
     justify-content: center;
-    padding:70px  ;
-    background-color: #000033F2;
-    font-family: 'mulish';
+    padding: 50px;
+    gap: 50px;
 }
-footer a{
-    color: #fff;
+.footer{
+    display: flex;
+    background-color: var(--text-color);
+    gap: 20px;
+    justify-content: space-between;
 }
-.footer1{
+.footer .wrapper{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    background-color: var(--text-color);
+    padding: 0;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
 }
-.footer1 .container{
+
+.footer .wrapper .nav{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    /* text-wrap: nowrap; */
+    gap: 20px;
+    justify-content: center;
 }
-.footer1 .container .text{
+.footer a{
     color: #fff;
-    font-family: 'mulish';
-
 }
-.footer1 .container h3{
+.footer p{
+    color: #fff;
+}
+a h3{
+    color: #fff;
     font-weight: 700;
     font-size: 29.06px;
-    color: #fff;
-}
-.footer1 .container h3 span{
-    color: var(--button-bgc);
-}
-.footer1 .container a{
-    font-family: 'mulish';
-}
-.connect{
-    color: #fff;
-    font-family: 'mulish';
+    line-height: 23.61px;
+    letter-spacing: 3%;
 
 }
-.footer2 p{
+a h3 span{
+    color: var(--button-bgc);
+}
+.last{
     color: #fff;
 }
 @media(max-width:768px){
@@ -598,17 +598,22 @@ footer a{
     width: 50%;
     }
     footer{
-        flex-direction:column;
-        gap: 0px;
-        padding: 0;
-        text-wrap: wrap;
+        align-items: center;
+        gap: 0;
     }
-    footer .container{
+    .footer{
         flex-direction: column;
-        gap:  0px;
+        justify-content: center;
     }
-    .footer1{
+    .footer .container{
+        justify-content: space-between;
         flex-direction: column;
-        gap: 0px;
+    }
+    .footer .container nav{
+        display: flex;
+        flex-direction: row;
+    }
+    a h3{
+        text-align: center;
     }
 }
